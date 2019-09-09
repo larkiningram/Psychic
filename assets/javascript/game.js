@@ -16,6 +16,8 @@ var lossesText = document.getElementById("losses-text");
 var numLeft = document.getElementById("num-left");
 var soFar = document.getElementById("so-far");
 
+var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
 
@@ -24,7 +26,6 @@ document.onkeyup = function(event) {
     var userGuess = event.key.toLowerCase();
 
     // Randomly chooses a choice from the options array. This is the Computer's guess.
-    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
     console.log(userGuess);
     console.log("-----------");
